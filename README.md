@@ -14,7 +14,7 @@ To create the base image `ahgora/alpine-test-node`, execute the following comman
       docker build -t <build_name>  .
 
 
-Running your Apache+PHP docker image
+Running your docker image
 ------------------------------------
 
 Start your image, build its link to whichever other container you need to connect to:
@@ -22,7 +22,7 @@ Start your image, build its link to whichever other container you need to connec
      docker run -t -d --link cassandra:cassandra alpine-test-node /bin/sh
 
 
-Loading your PHP application into the container to test
+Loading your application into the container to test
 --------------------------------------------------------
 
 
