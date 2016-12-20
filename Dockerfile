@@ -1,7 +1,7 @@
 FROM alpine:3.4
 
 
-ENV VERSION=v4.6.2 
+ENV VERSION=v4.5.0 
 
 RUN apk add --no-cache wget curl make gcc g++ python linux-headers paxctl libgcc libstdc++ gnupg libc6-compat bind-tools && \
   gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \
@@ -32,8 +32,3 @@ RUN apk add --no-cache wget curl make gcc g++ python linux-headers paxctl libgcc
     npm install -g yarn && \
     find /usr/lib/node_modules/npm -name test -o -name .bin -type d | xargs rm -rf; \
   fi
-
-
-
-
-
