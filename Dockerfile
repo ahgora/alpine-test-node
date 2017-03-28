@@ -1,7 +1,7 @@
 FROM alpine:3.4
 
 
-ENV VERSION=v4.5.0 
+ENV VERSION=v6.9.4
 
 RUN apk add --no-cache wget curl make gcc g++ python linux-headers paxctl libgcc libstdc++ gnupg libc6-compat bind-tools && \
   gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \
